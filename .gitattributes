@@ -1,0 +1,4 @@
+data/processed/*.csv filter=lfs diff=lfs merge=lfs -text
+data/processed/*.npy filter=lfs diff=lfs merge=lfs -text
+models/*.joblib filter=lfs diff=lfs merge=lfs -text
+models/*.pt filter=lfs diff=lfs merge=lfs -text

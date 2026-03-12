@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+
+# Exclude oversized generated interim artifact (GitHub file-size limit)
+data/interim/train_dataset.csv

@@ -1,0 +1,135 @@
+CICIoMT2024 Sequence Inspection
+================================
+
+Interim dataset shape: (7160831, 47)
+Processed dataset shape: (499948, 46)
+
+Interim columns:
+- header_length
+- protocol_type
+- duration
+- rate
+- srate
+- drate
+- fin_flag_number
+- syn_flag_number
+- rst_flag_number
+- psh_flag_number
+- ack_flag_number
+- ece_flag_number
+- cwr_flag_number
+- ack_count
+- syn_count
+- fin_count
+- rst_count
+- http
+- https
+- dns
+- telnet
+- smtp
+- ssh
+- irc
+- tcp
+- udp
+- dhcp
+- arp
+- icmp
+- igmp
+- ipv
+- llc
+- tot_sum
+- min
+- max
+- avg
+- std
+- tot_size
+- iat
+- number
+- magnitue
+- radius
+- covariance
+- variance
+- weight
+- label
+- source_file
+
+Processed columns:
+- header_length
+- protocol_type
+- duration
+- rate
+- srate
+- drate
+- fin_flag_number
+- syn_flag_number
+- rst_flag_number
+- psh_flag_number
+- ack_flag_number
+- ece_flag_number
+- cwr_flag_number
+- ack_count
+- syn_count
+- fin_count
+- rst_count
+- http
+- https
+- dns
+- telnet
+- smtp
+- ssh
+- irc
+- tcp
+- udp
+- dhcp
+- arp
+- icmp
+- igmp
+- ipv
+- llc
+- tot_sum
+- min
+- max
+- avg
+- std
+- tot_size
+- iat
+- number
+- magnitue
+- radius
+- covariance
+- variance
+- weight
+- label_encoded
+
+Temporal candidate columns in interim dataset:
+- iat | dtype=float64 | sample_values=[169402615.79041082, 169402615.8126709, 0.013611102104187, 169402615.8556471, 0.0139309883117675]
+
+Temporal candidate columns in processed dataset:
+- iat | dtype=float64 | sample_values=[0.4997780175809328, 0.4997722206783327, 0.4996460582910023, 0.49967291558514, 0.4997777140795416]
+
+Counts by source_file (interim):
+Unique source_file values: 51
+Top 20 source_file counts:
+- data/raw/CICIoMT2024/WiFi and MQTT/train/TCP_IP-DDoS-UDP2_train.pcap.csv: 207295
+- data/raw/CICIoMT2024/WiFi and MQTT/train/TCP_IP-DDoS-UDP3_train.pcap.csv: 206604
+- data/raw/CICIoMT2024/WiFi and MQTT/train/TCP_IP-DDoS-UDP4_train.pcap.csv: 206343
+- data/raw/CICIoMT2024/WiFi and MQTT/train/TCP_IP-DDoS-UDP1_train.pcap.csv: 206170
+- data/raw/CICIoMT2024/WiFi and MQTT/train/TCP_IP-DDoS-UDP5_train.pcap.csv: 205507
+- data/raw/CICIoMT2024/WiFi and MQTT/train/TCP_IP-DDoS-UDP8_train.pcap.csv: 204105
+- data/raw/CICIoMT2024/WiFi and MQTT/train/TCP_IP-DDoS-TCP3_train.pcap.csv: 204075
+- data/raw/CICIoMT2024/WiFi and MQTT/train/TCP_IP-DDoS-SYN2_train.pcap.csv: 203669
+- data/raw/CICIoMT2024/WiFi and MQTT/train/TCP_IP-DDoS-TCP1_train.pcap.csv: 202311
+- data/raw/CICIoMT2024/WiFi and MQTT/train/TCP_IP-DDoS-UDP6_train.pcap.csv: 202247
+- data/raw/CICIoMT2024/WiFi and MQTT/train/TCP_IP-DDoS-SYN3_train.pcap.csv: 202023
+- data/raw/CICIoMT2024/WiFi and MQTT/train/TCP_IP-DDoS-TCP4_train.pcap.csv: 200998
+- data/raw/CICIoMT2024/WiFi and MQTT/train/TCP_IP-DDoS-SYN1_train.pcap.csv: 199390
+- data/raw/CICIoMT2024/WiFi and MQTT/train/TCP_IP-DDoS-UDP7_train.pcap.csv: 197685
+- data/raw/CICIoMT2024/WiFi and MQTT/train/TCP_IP-DDoS-TCP2_train.pcap.csv: 197081
+- data/raw/CICIoMT2024/WiFi and MQTT/train/TCP_IP-DDoS-SYN4_train.pcap.csv: 196880
+- data/raw/CICIoMT2024/WiFi and MQTT/train/TCP_IP-DDoS-ICMP5_train.pcap.csv: 195032
+- data/raw/CICIoMT2024/WiFi and MQTT/train/TCP_IP-DDoS-ICMP1_train.pcap.csv: 194938
+- data/raw/CICIoMT2024/WiFi and MQTT/train/TCP_IP-DDoS-ICMP2_train.pcap.csv: 194818
+- data/raw/CICIoMT2024/WiFi and MQTT/train/TCP_IP-DDoS-ICMP8_train.pcap.csv: 193340
+
+Temporal sequencing suitability assessment:
+Potentially suitable for temporal grouping: source_file exists and temporal-like columns are present. For true temporal modeling, group by source_file and sort within each group using a reliable timestamp/order column.
